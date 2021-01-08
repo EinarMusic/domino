@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<div class="grid-container-- ranie">
-			<div class="grid-item- total">{{ total }}</div>
-			<div class="grid-item- total">Total</div>
-			<div class="grid-item- total">{{ total2 }}</div>
+			<div class="boarPlayer total">{{ total }}</div>
+			<div class="boarPlayer total">Total</div>
+			<div class="boarPlayer total">{{ total2 }}</div>
 		</div>
 	</div>
 </template>
@@ -28,10 +28,18 @@ export default {
 .ranie {
 	display: grid;
 	grid-template-columns: auto auto auto;
+
+	border-radius: 0px 0px 10px 10px;
+	background: #e54e4e;
 	width: 100%;
+
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	margin-bottom: 10px;
 }
 
-.grid-item- {
+.boarPlayer {
 	border: none;
 	padding: 3px;
 	font-size: 30px;
@@ -40,7 +48,6 @@ export default {
 }
 
 .total {
-	background: #30475e;
 	color: #dddddd;
 }
 </style>

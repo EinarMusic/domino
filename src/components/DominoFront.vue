@@ -8,19 +8,21 @@
 				<p class="players">Other</p>
 			</div>
 		</div>
-		<BoarPlayer />
-		<tablePlayer />
+		<DotBoard />
+		<PlayerBoard />
+		<RemoveP />
 		<ControlBoard />
 	</div>
 </template>
 
 <script>
-import BoarPlayer from "./BoardPlayer-2";
+import DotBoard from "./DotBoard";
 import ControlBoard from "./ControlBoard";
-import tablePlayer from "./TablePlayer2";
+import PlayerBoard from "./PlayerBoard";
+import RemoveP from "./RemoveP";
 
 export default {
-	components: { BoarPlayer, ControlBoard, tablePlayer },
+	components: { DotBoard, ControlBoard, PlayerBoard, RemoveP },
 };
 </script>
 
@@ -29,6 +31,10 @@ export default {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: -0.2px;
+	font-size: 16px;
 }
 
 .header {

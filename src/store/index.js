@@ -17,7 +17,6 @@ export default new Vuex.Store({
 		point2: [],
 		total: 0,
 		total2: 0,
-		name: 0,
 	},
 	getters: {
 		tableTotal: (state) => {
